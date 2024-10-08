@@ -1,0 +1,10 @@
+program: finetune.py
+method: bayes
+metric: 
+    name: train_loss
+    goal: minimize
+parameters:
+    learning_rate:
+        distribution: uniform
+        min: 1e-5
+        max: 3e-3
